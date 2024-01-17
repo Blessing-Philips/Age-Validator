@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Validator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Age Validator</h2>
+
+        <form
+          action=""
+          method="get"
+          onsubmit="event.preventDefault(); validateAge()"
+        >
+          <div class="age__input">
+            <label for="age">Enter Age:</label><br />
+            <input type="text" id="age" name="age"/>
+          </div>
+          <div class="select__candidate">
+            <p>Select Candidate:</p>
+            <input type="radio" value="cand1" name="candidate" />
+            <label for="cand1">Anagu Blessing</label><br />
+            <input type="radio" value="cand2" name="candidate" />
+            <label for="cand2">Adesilu Adedamola</label><br />
+            <input type="radio" value="cand3" name="candidate" />
+            <label for="cand3">Edo Elizabeth</label>
+          </div>
+          <div id="btn">
+            <button type="submit">Validate Age</button>
+          </div>
+        </form>
+
+        <p id="result">Result : </p>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
